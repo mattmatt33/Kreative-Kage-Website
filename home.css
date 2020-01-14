@@ -1,0 +1,64 @@
+:root {
+    --mainColor: #e2daca;
+    --secColor: #cbcccc;
+}
+
+.intro {
+    margin: auto;
+    width: 600px;
+    padding-top: 50px;
+}
+
+.intro h1 {
+    margin-bottom: 50px;
+    font-size: 52px;
+    width: 900px;
+}
+
+.int3 {
+    margin-bottom: 100px;
+}
+
+
+.email-box {
+    background-color: #fff;
+    width: 450px;
+    height: 175px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+.email-box h3 {
+    text-align: center;
+}
+
+.email-box .txt-area {
+    background-color: var(--mainColor);
+    padding: 5px;
+    margin: 15px 0;
+    font-size: 20px;
+    width: 300px;
+    margin-left: 55px;
+}
+
+.email-box .join-btn {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--mainColor);
+    margin-left: 110px;
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .intro {
+        width: 350px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kreative Kage</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link rel="stylesheet" href="picture-gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+        <header>
+            
+                <a href="home.html"> <img src="../imgs/logo.jpg" alt="Kreative Kage Logo" class="main-logo"> </a>
+            
+                <div class="menu-wrap">
+                    <input type="checkbox" class="toggler">
+                        <div class="hamburger">
+                            <div></div>
+                        </div>
+                    </div>
+
+                <ul class="nav-list"> 
+                    <a href="home.html"><li>Home</li></a>
+                    <a href="gallery.html"><li>Gallery
+
+                        <ul class="sub-menu">
+                            <a href="weddings.html"><li>Weddings</li></a>
+                            <a href="maternity.html"><li>Maternity</li></a>
+                            <a href="seniors.html"><li>Graduates</li></a>
+                            <a href="babies.html"><li>New Borns</li></a>
+                            <a href="family.html"><li>Family</li></a>
+                        </ul>
+                    </li></a>
+                    <a href="photographers.html"><li>Photographers
+                            <ul class="sub-menu">
+                                    <a href="omar.html"><li>Jordan Kage</li></a>
+                                    <a href="dave.html"><li>Dave Kage</li></a>
+                                    <a href="jas.html"><li>Jas</li></a>
+                            </ul>
+                    </li></a>
+                    <a href="rates.html"><li>Rates</li></a>
+                    <a href="contact.html"><li>Contact Us</li></a>
+                </ul>
+            
+        </header>
+
+    <div class="container">
+       <div class="pic-contain">
+        <!-- Pic Gallery Start -->
+        <img data-enlargable src="imgs/newborns/brandless-yKPlmKNMxIE-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/ciprian-sam-yQEcRJkmH3I-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/dakota-corbin-5yUPFjGFJoI-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/filip-mroz-oko_4WnoM98-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/gift-habeshaw-d-vKF0tIDp8-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/helder-almeida-vjtIl4-fFcI-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/jake-peterson-t062zQaH3-0-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/janko-ferlic-specialdaddy-EpbIXGCrtK0-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/jenna-norman-K0cR-YgbP1s-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/kelly-sikkema-t53nC7J6Y0E-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/mindy-olson-p-EL5IhM6x9qo-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/omar-lopez-GyC8orikcdM-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/shelby-miller-2fQBmhOgldM-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/tim-bish-WbC9XIlQb4k-unsplash.jpg" alt="">
+        <img data-enlargable src="imgs/newborns/walaa-khaleel-pgSy1-dZkuw-unsplash.jpg" alt="">
+
+        <!-- Pic Gallery End -->
+    </div>
+    
+
+
+
+
+            
+        
+            
+ 
+
+        
+        <footer class="footer">
+
+            <div class="soc-med">
+                <img src="../imgs/Facebook.svg" alt="Facebook">
+                <img src="../imgs/Instagram.svg" alt="Instagram">
+                <img src="../imgs/YouTube.svg" alt="YouTube">
+            </div>
+            
+        </footer>
+    </div>
+    <h3 class="copyright">&copy; 2020 Kreative Kage</h3>
+
+    <script>
+        // View Pics full screen when clicked
+        $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+    var src = $(this).attr('src');
+    $('<div>').css({
+        background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+        backgroundSize: 'contain',
+        width:'100%', height:'100%',
+        position:'fixed',
+        zIndex:'10000',
+        top:'0', left:'0',
+        cursor: 'zoom-out'
+    }).click(function(){
+        $(this).remove();
+    }).appendTo('body');
+}); 
+    // End
+    </script>
+
+
+</body>
+</html>
